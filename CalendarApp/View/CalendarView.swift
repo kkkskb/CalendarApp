@@ -13,3 +13,6 @@ struct CalendarView: View {
             .padding()
     }
 }
+#Preview {
+    CalendarView()
+}

@@ -13,3 +13,6 @@ struct TalkView: View {
             .padding()
     }
 }
+#Preview {
+    TalkView()
+}
