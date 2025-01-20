@@ -18,7 +18,6 @@ struct ContentView: View {
                     Text("カレンダー")
                 }
 
-            // トーク画面
             TalkView()
                 .tabItem {
                     Image(systemName: "message")
