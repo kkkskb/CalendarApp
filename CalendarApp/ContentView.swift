@@ -9,16 +9,43 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+        TabView {
+            // カレンダー画面
+            CalendarView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("カレンダー")
+                }
+
+            // トーク画面
+            TalkView()
+                .tabItem {
+                    Image(systemName: "message")
+                    Text("トーク")
+                }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct CalendarView: View {
+    var body: some View {
+        Text("カレンダー画面")
+            .font(.largeTitle)
+            .padding()
+    }
+}
+
+struct TalkView: View {
+    var body: some View {
+        Text("トーク画面")
+            .font(.largeTitle)
+            .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
