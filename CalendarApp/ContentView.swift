@@ -11,7 +11,6 @@ struct ContentView: View {
     var body: some View {
 
         TabView {
-            // カレンダー画面
             CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
